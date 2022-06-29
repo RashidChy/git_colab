@@ -1,0 +1,112 @@
+#grid {
+      border: 2px solid black;
+      height: 500px;
+      width: 1400px;
+      margin: auto;
+      overflow: hidden;
+      background-image: url(bg.gif);
+      background-size: contain;
+}
+#grid img{
+      width: 100px;
+}
+
+#player{
+      /* height: 100px;
+      width: 40px;
+      background-color: black; */
+
+      position: relative;
+      top: 400px;
+      left: 170px;
+      
+}
+
+.jump{
+      animation: jump 0.9s linear ;
+}
+
+@keyframes jump {
+      0%{
+            top: 400px;
+      }
+      30%{
+            top: 200px;
+      }
+      50%{
+            top: 80px;
+      }
+      80%{
+            top: 200px;
+      }
+      100%{
+            top: 400px;
+      }
+      
+}
+
+
+#obstacle{
+      background-color: rgba(255, 44, 44, 0.856);
+      height: 40px;
+      width: 20px;
+      position: relative;
+      top: 340px;
+      left: 1400px;
+
+      animation: block 4s infinite linear;
+}
+
+@keyframes block {
+      0%{
+            left: 1385px;
+      }
+      100%{
+            left:-1000px;
+      }
+      
+}
+
+
+#obstacle2{
+      background-color: rgba(44, 118, 255, 0.856);
+      height: 40px;
+      width: 25px;
+      position: relative;
+      top: 290px;
+      left: 1400px;
+
+      animation: block2 3s infinite linear;
+}
+
+@keyframes block2 {
+      0%{
+            left: 1585px;
+      }
+      100%{
+            left:-20px;
+      }
+      
+}
+
+#obstacle3{
+      background-color: rgba(34, 226, 0, 0.856);
+      height: 40px;
+      width: 25px;
+      position: relative;
+      top: 140px;
+      left: 1400px;
+
+      animation: block3 3s infinite linear;
+      animation-delay: 2s;
+}
+
+@keyframes block3 {
+      0%{
+            left: 1785px;
+      }
+      100%{
+            left: -100px;
+      }
+      
+}
